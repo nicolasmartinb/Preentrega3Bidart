@@ -1,0 +1,380 @@
+:root {
+    --color-TextoFooter: #afebadf8;
+    --color-TextoExplicativo: #3c3fe7;
+    --color-fondo: #558a5a;
+    --color-Titulo: #0f1011;
+    --color-footer:rgb(19, 22, 22);
+    --color-header:rgb(35, 119, 175);
+    --color-texto:rgb(19, 20, 20);
+   
+
+
+}
+
+
+
+
+/*Fuentes
+font-family: 'Comic Neue', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Young Serif', serif;
+*/
+
+
+
+
+
+
+
+
+
+
+/* titulos y subtitulos */
+
+
+
+
+.tituloshtmls{
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(162, 201, 104);
+   
+    font-family: 'Young Serif', serif;
+   
+    font-size: 30px;
+    color: rgb(9, 9, 8);
+    padding: 25px;
+    font-weight: bolder;
+}
+.subtituloshtmls{
+    color: rgb(9, 9, 8);
+    background-color: rgb(162, 201, 104);
+     text-align: center;
+    padding: 25px;
+   
+    font-family: 'Comic Neue', cursive;
+
+
+}
+.titulo-planta{
+    color: white;
+    background-color: var(--color-fondo);
+    text-align: center;
+    padding: 1rem;
+}
+.titulo-ficus {
+    color: #3d9933;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: var(--color-fondo);
+}
+.header{
+    background-color: var(--color-fondo);
+    font-size: 20px;
+    text-decoration: none;
+    color: beige;
+   
+
+
+}
+/*Boton*/
+.btn {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    color: #121213;
+    border-radius: 5px;
+    display: inline-block;
+    outline: none;
+    background-color:rgb(162, 201, 104)
+   
+  }
+ 
+ 
+  .mi-btn{
+    border-radius: 25px;
+    color: white;
+}
+
+
+/*BOTON PARA TIENDA*/
+
+
+.btn-tienda{
+    border-radius: 10px;
+    outline: none;
+   
+    background-color: #34db7f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+
+.boton-tienda:hover {
+    border-radius: 5px;
+    background-color: #3c3fe7;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .textos{
+    font-size: 40px ;
+ }
+
+
+/*Propiedades Nav-var*/
+.fondo-navint{
+    background-color: #558a5a;
+}
+.navbar navbar-expand-lg bg-light{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 0.5cm;
+    padding: 16px;
+    background-color: #558a5a;
+
+
+
+
+}
+.Barra-nav li {
+    margin-right: 0.5cm;
+}
+
+
+.Barra-nav a:visited {
+    color: aliceblue;
+    text-decoration: none;
+}
+.barra-nav{
+    padding-left: 35%;
+}
+
+
+/*Propiedades de imagenes*/
+
+
+.media-foto-index{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.media-foto-interiores{
+    margin: 10px;
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+
+.fondo-pantalla{
+    background-image: url(https://es.123rf.com/photo_156129580_flores-decorativas-y-plantas-en-el-jard%C3%ADn-dise%C3%B1o-de-exteriores-fondo-natural-natural-enfoque.html);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.fondo-pantalla-interiores{
+    background-image: url(../img/interirosimo.avif);
+   
+}
+
+
+
+
+.contact-fond{
+    background-image: url(../img/variedadplantasfondo.avif);
+     background-size: 100% auto
+ 
+ 
+   
+}
+
+
+.fondo-tienda{
+    background-image: url(../img/fondo-tienda2.avif);
+}
+.media-foto-exteriores{
+   
+   
+    margin: 10px;
+    box-sizing: border-box;
+    min-height: auto;
+ 
+}
+
+
+
+
+.fondopantallaindex{
+    background-image: url(../img/indexfondo.avif);
+}
+
+
+.fondo-pantalla{
+   background-image:url(../img/fondo-plantas-ext.jpg)
+}
+.mi-carrusel img{
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+   
+ }
+ .mi-carrusel{
+    position: relative;
+    float: right;
+    margin-right: auto;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+ }
+
+
+
+
+.caja-padre{
+    display: flex;
+    align-items: start;
+}
+
+
+.caja-padre-tienda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.ficha-tecnica{
+    font-size: 18px;
+    max-width: 80%;
+    margin: 10px;
+    box-sizing: border-box;
+    color: rgb(238, 237, 235);
+    background-color: olive;
+    font-family: 'Comic Neue', cursive;
+}
+
+
+/*Propiedades-footer*/
+
+.footer{
+    font-size: 20px;
+    text-align: right;
+    padding: 5px;
+    display: flex;
+    list-style: none;
+    background-color: var(--color-fondo);
+    font-weight: bold;
+ }
+.arriba-footer {
+    background-color: #558a5a;
+font-size: 50px;
+font-family: 'Comic Neue', cursive;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
+}
+ .arriba-footer2{
+    font-family: 'Comic Neue', cursive;
+}
+
+.slogan{
+
+
+    font-size: 50px;
+}
+.Copyright{
+    color: white;
+    padding:0.5%;
+}
+
+
+
+
+
+ .formulario-de-contacto{
+    color: black;
+    background-color: var(--color-TextoFooter);
+    padding: 35px;
+    text-align: center;
+    font-size: 30px;
+    background-image: url(../img/fondcon.jpg);
+
+
+ }
+
+
+ .config-tienda{
+    padding: 30px;
+    border: 2rem;
+    background-image: url(../img/fondo-tienda2.avif);
+ }
+
+
+.Copyright{
+    color: white;
+    padding:0.5%;
+}
+
+
+ /* Estilos para los paneles de información */
+.accordion-body {
+    background-color: rgb(162, 201, 104);
+    box-shadow: 0 4px 8px 0 rgba(192, 16, 16, 0.2);
+    padding: 15px;
+}
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: #0d0c0c;
+  }
+
+
+  .navbar-brand {
+    color: #000000;
+  }
