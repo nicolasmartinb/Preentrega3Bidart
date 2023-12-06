@@ -1,0 +1,36 @@
+.btn {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    outline: none;
+    background-color:rgb(162, 201, 104)
+   
+ 
+    
+}
+.buttonOk{
+    text-decoration: none;
+    color: black;
+    &:hover {
+        
+        color: green;
+      }
+}
+
+.btn-tienda{
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #34db7f;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+
+    &:hover {
+        border-radius: 5px;
+        color: #114808;
+       
+    }
+    
+}

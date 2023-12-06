@@ -1,23 +1,26 @@
+@import 'partials/buttons';
+@import 'partials/footer';
+@import 'partials/navbar';
+
+
 :root {
     $color-TextoFooter: #afebadf8;
-    $color-TextoExplicativo: #3c3fe7;
+    $color-TextoExplicativo: #b8b8c8;
     $color-fondo: #558a5a;
     $color-Titulo: #0f1011;
     $color-footer:rgb(19, 22, 22);
     $color-header:rgb(35, 119, 175);
     $color-texto:rgb(19, 20, 20);
-   
-
 
 }
 *{
-    margin: 0;
-    padding: 0;
+    margin: 2px;
+    padding: 2px;
     box-sizing: border-box;
 }
 
 body{
-    background-color: var(--color-fondo);
+    background-color: #558a5a;
 }
 .header{
     background-color: var(--color-fondo);
@@ -25,104 +28,36 @@ body{
     text-decoration: none;
     color: beige;
 }
-.miNavbar{
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-    margin-right: 0.5cm;
-    padding: 16px;
-    background-color: #558a5a;
-    .barra-nav{
-        padding-left: 35%;
-    }
-    .Barra-nav li {
-        margin-right: 0.5cm;
-    }
-    .Barra-nav a:visited {
-        color: aliceblue;
-        text-decoration: none;
-    }
-}
-.navbar-nav .nav-link {
-    font-weight: bold;
-    color: #0d0c0c;
-    .navbar-brand {
-        color: #000000;
-      }
-    
-  }
 
 .tituloshtmls{
     text-align: center;
-    font-size: 60px;
+    font-size: 35px;
     background-color: rgb(162, 201, 104);
-   
     font-family: 'Young Serif', serif;
-   
-    font-size: 30px;
     color: rgb(9, 9, 8);
-    padding: 25px;
     font-weight: bolder;
 }
 .subtituloshtmls{
     color: rgb(9, 9, 8);
     background-color: rgb(162, 201, 104);
      text-align: center;
-    padding: 25px;
-   
     font-family: 'Comic Neue', cursive;
 
 
 }
+.Fondo-imagen-titulo-texto{
+    background-color: rgb(162, 201, 104);
+}
 
 .titulo-planta{
-    color: white;
+    color: black;
     background-color: var(--color-fondo);
     text-align: center;
     padding: 1rem;
-    .titulo-ficus {
-        color: #3d9933;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-}
-
-.btn {
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    outline: none;
-    background-color:rgb(162, 201, 104)
-   
  
-    
-}
-.buttonOk{
-    text-decoration: none;
-    color: black;
-    &:hover {
-        
-        color: green;
-      }
 }
 
-.btn-tienda{
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: #34db7f;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
 
-    &:hover {
-        border-radius: 5px;
-        color: #114808;
-       
-    }
-    
-}
 .textos{
     font-size: 40px ;
  }
@@ -143,17 +78,17 @@ body{
 }
 
 .fondo-pantalla{
-    background-image: url(https://es.123rf.com/photo_156129580_flores-decorativas-y-plantas-en-el-jard%C3%ADn-dise%C3%B1o-de-exteriores-fondo-natural-natural-enfoque.html);
+    background-color: #558a5a;
+   
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     
 }
-.fondo-pantalla-interiores{
-    background-image: url(../img/interirosimo.avif);
+
    
-}
+
 
 .contact-fond{
     background-image: url(../img/variedadplantasfondo.avif);
@@ -173,13 +108,6 @@ body{
  
 }
 
-.fondo-pantalla{
-    background-image:url(../img/fondo-plantas-ext.jpg)
- }
-
- .fondopantallaindex{
-    background-image: url(../img/indexfondo.avif);
-}
 .mi-carrusel{
     position: relative;
     float: right;
@@ -212,8 +140,8 @@ body{
     max-width: 80%;
     margin: 10px;
     box-sizing: border-box;
-    color: rgb(238, 237, 235);
-    background-color: olive;
+    color: rgb(5, 4, 3);
+    
     font-family: 'Comic Neue', cursive;
     .accordion-body {
         background-color: rgb(162, 201, 104);
@@ -222,30 +150,11 @@ body{
     }
 }
 
-.footer{
-    font-size: 20px;
-    text-align: right;
-    padding: 5px;
-    display: flex;
-    list-style: none;
-    background-color: var(--color-TextoFooter);
-    font-weight: bold;
-    
-    .arriba-footer2{
-        font-family: 'Comic Neue', cursive;
-    }
- }
- .arriba-footer {
-    background-color: #558a5a;
-font-size: 50px;
-font-family: 'Comic Neue', cursive;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+
+ 
 
 
-}
+
  .formulario-de-contacto{
     color: black;
     background-color: var(--color-TextoFooter);
@@ -261,16 +170,12 @@ text-align: center;
     padding: 30px;
     border: 2rem;
     background-image: url(../img/fondo-tienda2.avif);
+    display: flex;
+    flex-wrap: wrap;
  }
- .navbar-brand {
-    color: #000000;
-  }
-  .slogan{
-
-
-    font-size: 50px;
+ .mitarjeta{
+    flex: 0 0 calc(50% - 1rem); 
+  margin: 0.5rem;
 }
-.Copyright{
-    color: white;
-    padding:0.5%;
-}
+ 
+ 
