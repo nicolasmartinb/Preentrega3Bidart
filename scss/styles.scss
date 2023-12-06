@@ -54,6 +54,11 @@ body{
     background-color: var(--color-fondo);
     text-align: center;
     padding: 1rem;
+    @media only screen and (max-width: 768px) {
+        .titulo-planta, .media-foto-interiores {
+            text-align: center; // Centra los títulos y las imágenes
+          }
+    }
  
 }
 
@@ -75,6 +80,12 @@ body{
         box-sizing: border-box;
         min-height: auto;
     }
+    @media only screen and (max-width: 768px) {
+        .media-foto-interiores img {
+            width: 100%; // Ajusta el ancho de la imagen al 100% del contenedor
+          }
+    }
+    
 }
 
 .fondo-pantalla{
@@ -124,16 +135,23 @@ body{
      }
  }
 
- .caja-padre{
+ .caja-padre {
     display: flex;
-    align-items: start;
-    .caja-padre-tienda{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    justify-content: space-between; // Ajusta el espacio entre los elementos
+    align-items: center; // Centra verticalmente los elementos
+}
+
+@media only screen and (max-width: 768px) {
+    .caja-padre {
+        flex-direction: column; // Cambia a disposición de columna en vista mobile
+        text-align: center; // Centra horizontalmente los elementos en vista mobile
     }
 
+    .media-foto-interiores img {
+        margin-bottom: 10px; // Ajusta el margen inferior de la imagen en vista mobile
+    }
 }
+
 
 .ficha-tecnica{
     font-size: 18px;
@@ -148,9 +166,19 @@ body{
         box-shadow: 0 4px 8px 0 rgba(192, 16, 16, 0.2);
         padding: 15px;
     }
+    @media only screen and (max-width: 468px) {
+        .ficha-tecnica {
+           display: block;
+            width: 97%; // Ajusta el ancho para ocupar el 100% del contenedor
+          }
+    }
 }
 
-
+.parrafo{
+    @media only screen and (max-width: 468px) {
+        display: block;
+    }
+}
  
 
 
@@ -178,4 +206,17 @@ body{
   margin: 0.5rem;
 }
  
+/* Estilos generales */
+
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
  

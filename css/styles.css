@@ -81,6 +81,15 @@
   font-size: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  .miNavbar {
+    background-color: #174a28;
+  }
+  .navbar-nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
 * {
   margin: 2px;
   padding: 2px;
@@ -124,6 +133,11 @@ body {
   text-align: center;
   padding: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  .titulo-planta .titulo-planta, .titulo-planta .media-foto-interiores {
+    text-align: center;
+  }
+}
 
 .textos {
   font-size: 40px;
@@ -141,6 +155,11 @@ body {
   margin: 10px;
   box-sizing: border-box;
   min-height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .media-foto-index .media-foto-interiores img {
+    width: 100%;
+  }
 }
 
 .fondo-pantalla {
@@ -181,14 +200,19 @@ body {
 
 .caja-padre {
   display: flex;
-  align-items: start;
-}
-.caja-padre .caja-padre-tienda {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .caja-padre {
+    flex-direction: column;
+    text-align: center;
+  }
+  .media-foto-interiores img {
+    margin-bottom: 10px;
+  }
+}
 .ficha-tecnica {
   font-size: 18px;
   max-width: 80%;
@@ -201,6 +225,18 @@ body {
   background-color: rgb(162, 201, 104);
   box-shadow: 0 4px 8px 0 rgba(192, 16, 16, 0.2);
   padding: 15px;
+}
+@media only screen and (max-width: 468px) {
+  .ficha-tecnica .ficha-tecnica {
+    display: block;
+    width: 97%;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .parrafo {
+    display: block;
+  }
 }
 
 .formulario-de-contacto {
@@ -224,5 +260,7 @@ body {
   flex: 0 0 calc(50% - 1rem);
   margin: 0.5rem;
 }
+
+/* Estilos generales */
 
 /*# sourceMappingURL=styles.css.map */
